@@ -26,6 +26,8 @@ const defaultMenu = {
 *👋🏻 Hey* %name
 *├ Total user :* %totalreg
 *└ Uptime :* %muptime
+> ميزة تحميل الموسيقى
+> .song `(اسم الموسيقى)`
 %readmore
 
 `.trimStart(),
