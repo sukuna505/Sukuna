@@ -135,8 +135,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: `'Music Rap Maroc 
-  Admin : # - Sebastian ) 皮!'`,
+title: `Music Rap Maroc 
+Admin : # - Sebastian ) 皮!`,
 body: "أول بوت واتساب في العالم العربي 💖",
 thumbnailUrl: 'https://telegra.ph/file/2f0661732cb9453248db0.jpg',
 sourceUrl: 'https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X',
