@@ -27,7 +27,7 @@ const defaultMenu = {
 *├ Total user :* %totalreg
 *└ Uptime :* %muptime
 > ميزة تحميل الموسيقى
-> .song `(اسم الموسيقى)`
+> .song (اسم الموسيقى)
 %readmore
 
 `.trimStart(),
