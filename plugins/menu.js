@@ -23,12 +23,12 @@ let tags = {
 const defaultMenu = {
   before: `السلام عليكم 👋. 
 
-┏━━ salam  *%name*
-👥 *Total user:* %totalreg 
-⏰ *Uptime:* %muptime  
-┗━━━━━━━━━━⬣
+> ≡ *BOT DOWNLOAD MUSIC*
+
+*👋🏻 Hey* %name
+*├ Total user :* %totalreg
+*└ Uptime :* %muptime
 %readmore
-  ≡ *B O B I Z A | M E N U*
 `.trimStart(),
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
