@@ -126,7 +126,7 @@ title: `Music Rap Maroc
 Sebastian
 +33 6 05 90 72 72 `,
 body: "أول بوت واتساب في العالم العربي 💖",
-thumbnailUrl: '',
+thumbnailUrl: 'https://telegra.ph/file/2f0661732cb9453248db0.jpg',
 sourceUrl: 'https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X',
 mediaType: 1,
 renderLargerThumbnail: true
