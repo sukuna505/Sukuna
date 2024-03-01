@@ -7,14 +7,14 @@ let tags = {
     
 }
 const defaultMenu = {
-  before: `السلام عليكم 👋. 
+  before: `> ≡ *BOT DOWNLOAD MUSIC*
 
-┏━━ salam  *%name*
-👥 *Total user:* %totalreg 
-⏰ *Uptime:* %muptime  
-┗━━━━━━━━━━⬣
+*👋🏻 Hey* %name
+*├ Total user :* %totalreg
+*└ Uptime :* %muptime
 %readmore
-  ≡ *B O B I Z A | M E N U*
+  > *ميزة تحميل الموسيقى* 
+> *.song* اسم الموسيقى او المغني
   `.trimStart(),
 header:'*_%category_* ',
 body:'%cmd %isdiamond %isPremium',
