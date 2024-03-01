@@ -11,7 +11,12 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     const url = 'https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X' + videoId
   let vap = `*BOT DOWNLOAD MUSIC*
 
-
+*عنوان المقطع:* ${title}
+  *رابط المقطع:* ${url}
+  *وصف المقطع:* ${description}
+  *تاريخ نشره:* ${publishedTime}
+  *مدته:* ${durationH}
+  *عدد المشاهدات:* ${viewH}`
 
 conn.sendMessage(m.chat, {
 text: vap,
