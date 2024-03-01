@@ -19,7 +19,10 @@ const defaultMenu = {
 header:'%category',
 body:'%cmd %isdiamond %isPremium',
 footer:'\n',
-after: ' *إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من أن تسأل صاحب البوت* \n> *Bot Owner Number https://wa.me/message/LRG6KJCHLD3YF1*',
+after: ` *إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من أن تسأل صاحب البوت*
+
+> *Bot Owner Number
+> *+33 6 05 90 72 72*`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
