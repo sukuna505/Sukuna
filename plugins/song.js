@@ -9,7 +9,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (!vid) throw 'لم يتم العثور عليه، حاول عكس العنوان والمؤلف'
   let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
     const url = 'https://www.youtube.com/watch?v=' + videoId
-  let vap = `> # - SEBASTIAN ) 皮!
+  let vap = `BOT DOWNLOAD MUSIC
   
 > *Section Title :* ${title}`
 
@@ -33,7 +33,7 @@ mimetype: 'audio/mp4', fileName: `${title}`, contextInfo: { externalAdReply: { s
 mediaType:  2,
 mediaUrl: url,
 title: title,
-body: "© Bot Download Music",
+body: "© BOT DOWNLOAD MUSIC",
 sourceUrl: url,
 thumbnail: await(await conn.getFile(thumbnail)).data                                                                     
                                                                                                                  }
@@ -41,7 +41,7 @@ thumbnail: await(await conn.getFile(thumbnail)).data
   }
   return conn.sendMessage(m.chat, doc, { quoted: m })
 }
-handler.help = ['song']
+handler.help = ['son']
 handler.command = /^song$/i
 
 export default handler
