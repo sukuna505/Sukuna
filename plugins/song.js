@@ -9,10 +9,8 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (!vid) throw 'لم يتم العثور عليه، حاول عكس العنوان والمؤلف'
   let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
     const url = 'https://www.youtube.com/watch?v=' + videoId
-  let vap = `> BOT DOWNLOAD MUSIC
-
-> *Section Title :* ${title}
-> *Date published :* ${publishedTime}`
+  let vap = `> # - SEBASTIAN ) 皮!
+> *Section Title :* ${Title}`
 
 conn.sendMessage(m.chat, {
 text: vap,
