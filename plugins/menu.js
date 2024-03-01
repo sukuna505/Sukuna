@@ -4,7 +4,7 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-    
+
 }
 const defaultMenu = {
   before: `> ≡ *BOT DOWNLOAD MUSIC*
@@ -143,7 +143,6 @@ renderLargerThumbnail: true
   }
 }
 handler.help = ['menu']
-handler.tags = ['infobot']
 handler.command = ['menu','b','list'] 
 handler.register = false
 
