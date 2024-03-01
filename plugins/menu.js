@@ -14,7 +14,7 @@ const defaultMenu = {
 *└ Uptime :* %muptime
 %readmore
 > *ميزة تحميل الموسيقى* 
-> اسم الموسيقى او المغني *`song.`*
+> اسم الموسيقى او المغني *song.*
   `.trimStart(),
 header:'%category',
 body:'%cmd %isdiamond %isPremium',
