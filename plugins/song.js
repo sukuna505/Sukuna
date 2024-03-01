@@ -11,7 +11,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     const url = 'https://www.youtube.com/watch?v=' + videoId
   let vap = `> # - SEBASTIAN ) 皮!
   
-> *Section Title :* ${Title}`
+> *Section Title :* ${title}`
 
 conn.sendMessage(m.chat, {
 text: vap,
