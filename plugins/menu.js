@@ -133,7 +133,7 @@ title: `Music Rap Maroc 🎶
 Sebastian
 +33 6 05 90 72 72`,
 body: "+33 6 05 90 72 72",
-thumbnailUrl: 'https://telegra.ph/file/2f0661732cb9453248db0.jpg',
+thumbnailUrl: 'https://telegra.ph/file/f9e23ca26b5cfe252e172.jpg',
 sourceUrl: 'https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X',
 mediaType: 1,
 renderLargerThumbnail: true
