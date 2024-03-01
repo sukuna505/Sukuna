@@ -8,15 +8,11 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   })  
   if (!vid) throw 'لم يتم العثور عليه، حاول عكس العنوان والمؤلف'
   let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
-    const url = 'https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X' + videoId
-  let vap = `BOT DOWNLOAD MUSIC
+    const url = 'https://www.youtube.com/watch?v=' + videoId
+  let vap = `> BOT DOWNLOAD MUSIC
 
-*عنوان المقطع:* ${title}
-  *رابط المقطع:* ${url}
-  *وصف المقطع:* ${description}
-  *تاريخ نشره:* ${publishedTime}
-  *مدته:* ${durationH}
-  *عدد المشاهدات:* ${viewH}`
+> *Section Title :* ${title}
+> *Date published :* ${publishedTime}`
 
 conn.sendMessage(m.chat, {
 text: vap,
