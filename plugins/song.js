@@ -34,7 +34,7 @@ mediaType:  2,
 mediaUrl: url,
 title: title,
 body: "© BOT DOWNLOAD MUSIC",
-sourceUrl: url,
+sourceUrl: 'https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X',
 sourceUrl: 'https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X',
 thumbnail: await(await conn.getFile(thumbnail)).data                                                                     
                                                                                                                  }
