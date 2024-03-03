@@ -19,6 +19,8 @@ contextInfo: {
 externalAdReply: {
 title: vap,
 thumbnailUrl: thumbnail,
+  sourceUrl: 'https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X',
+  
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m}) 
