@@ -11,7 +11,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     const url = 'https://www.youtube.com/watch?v=' + videoId
   let vap = `BOT DOWNLOAD MUSIC
   
-> *Section Title :* ${title}`
+ ${title}`
 
 conn.sendMessage(m.chat, {
 text: vap,
@@ -29,7 +29,7 @@ const link = await yt.audio['128kbps'].download()
   { 
     url: link 
 }, 
-mimetype: 'audio/mp4', fileName: `${title}`, contextInfo: { externalAdReply: { showAdAttribution: true,
+mimetype: 'audio/group', fileName: `${title}`, contextInfo: { externalAdReply: { showAdAttribution: true,
 mediaType:  2,
 mediaUrl: url,
 title: title,
