@@ -19,8 +19,6 @@ contextInfo: {
 externalAdReply: {
 title: vap,
 thumbnailUrl: thumbnail,
-  sourceUrl: 'https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X',
-  
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m}) 
@@ -37,6 +35,7 @@ mediaUrl: url,
 title: title,
 body: "© BOT DOWNLOAD MUSIC",
 sourceUrl: url,
+sourceUrl: 'https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X',
 thumbnail: await(await conn.getFile(thumbnail)).data                                                                     
                                                                                                                  }
                        }
