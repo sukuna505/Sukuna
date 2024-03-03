@@ -9,10 +9,8 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (!vid) throw 'لم يتم العثور عليه، حاول عكس العنوان والمؤلف'
   let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
     const url = 'https://www.youtube.com/watch?v=' + videoId
-  let vap = `BOT DOWNLOAD MUSIC
-  
+  let vap = `  
  ${title}`
-
 conn.sendMessage(m.chat, {
 text: vap,
 contextInfo: {
@@ -29,7 +27,7 @@ const link = await yt.audio['128kbps'].download()
   { 
     url: link 
 }, 
-mimetype: 'audio/group', fileName: `${title}`, contextInfo: { externalAdReply: { showAdAttribution: true,
+mimetype: 'audio/mp4', fileName: `${title}`, contextInfo: { externalAdReply: { showAdAttribution: true,
 mediaType:  2,
 mediaUrl: url,
 title: title,
