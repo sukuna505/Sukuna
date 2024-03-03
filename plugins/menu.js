@@ -135,7 +135,6 @@ Sebastian
 body: "+33 6 05 90 72 72",
 thumbnailUrl: 'https://telegra.ph/file/f9e23ca26b5cfe252e172.jpg',
 sourceUrl: 'https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X',
-  sourceUrl: 'https://chat.whatsapp.com/Ft1hgqHyCNS7NZzFcDqKnz',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
