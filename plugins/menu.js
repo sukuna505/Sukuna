@@ -122,12 +122,12 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: `Music Rap Maroc 🎶
+title: `SoundLoader
 Sebastian
 +33 6 05 90 72 72`,
 body: "+33 6 05 90 72 72",
 thumbnailUrl: 'https://telegra.ph/file/f9e23ca26b5cfe252e172.jpg',
-sourceUrl: 'https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X',
+sourceUrl: 'https://wa.me/message/KGDUYWPLPTGIN1',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
