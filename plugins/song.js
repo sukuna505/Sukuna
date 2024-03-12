@@ -1,7 +1,7 @@
 import yts from 'yt-search'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper-sosmed'
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw ` مثال :\n*.song* Dib V2`
+  if (!text) throw ` مثال :\n.song سورة الرحمن بصوت القارئ حمزة بوديب`
   let res = await yts(text)
   let vid = res.videos[0]
   await conn.sendMessage(m.chat, { react: { text: "✅",key: m.key,}
