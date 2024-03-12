@@ -6,8 +6,11 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   let vid = res.videos[0]
   await conn.sendMessage(m.chat, { react: { text: "✅",key: m.key,}
   })  
-    let vap = `  
- `
+  if (!vid) throw 'لم يتم العثور عليه، حاول عكس العنوان والمؤلف'
+  let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
+    const url = 'https://www.youtube.com/watch?v=' + videoId
+     let vap = `  
+ ${title}`
 conn.sendMessage(m.chat, {
 text: vap,
 contextInfo: {
