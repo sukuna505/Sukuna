@@ -7,19 +7,12 @@ let tags = {
 
 }
 const defaultMenu = {
-  before: `> ≡ *BOT DOWNLOAD MUSIC*
+  before: `> ≡ *BOT SOUNDLOADER*
 
 *👋🏻 Hey* %name
 *├ Total user :* %totalreg
 *└ Uptime :* %muptime
 %readmore
-> *ميزة تحميل الموسيقى* 
-> اسم الأغنية أو المغني song.
-> أمثلة 👇🏻
-
-.song Raste Mal Zin Ka3i
-.song Smallx OK
-.song Dib V1
   `.trimStart(),
 header:'%category',
 body:'%cmd %isdiamond %isPremium',
