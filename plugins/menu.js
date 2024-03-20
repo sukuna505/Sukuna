@@ -7,7 +7,7 @@ let tags = {
 
 }
 const defaultMenu = {
-  before: `> ≡ *BOT SOUNDLOADER*
+  before: `> *BOT SOUNDLOADER*
 
 *👋🏻 Hey* %name
 *├ Total user :* %totalreg
@@ -32,7 +32,7 @@ body:'%cmd %isdiamond %isPremium',
 footer:'\n',
 after: ` *إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول*
 
-> *≡ - SEBASTIAN ) 皮!*`,
+> *໐นlค๓iຖē*`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -136,7 +136,7 @@ text: text,
 contextInfo: {
 externalAdReply: {
 title: `SoundLoader
-Sebastian
+໐นlค๓iຖē
 +33 6 05 90 72 72`,
 body: "+33 6 05 90 72 72",
 thumbnailUrl: 'https://telegra.ph/file/f9e23ca26b5cfe252e172.jpg',
