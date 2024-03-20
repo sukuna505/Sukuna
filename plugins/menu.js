@@ -7,9 +7,7 @@ let tags = {
 
 }
 const defaultMenu = {
-  before: `> *BOT SOUNDLOADER*
-
-*👋🏻 Hey* %name
+  before: `*👋🏻 Hey* %name
 *├ Total user :* %totalreg
 *└ Uptime :* %muptime
 %readmore
@@ -135,9 +133,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: `SoundLoader
-໐นlค๓iຖē
-+33 6 05 90 72 72`,
+title: `SoundLoader Bot
+໐นlค๓iຖē`,
 body: "+33 6 05 90 72 72",
 thumbnailUrl: 'https://telegra.ph/file/f9e23ca26b5cfe252e172.jpg',
 sourceUrl: 'https://wa.me/message/KGDUYWPLPTGIN1',
