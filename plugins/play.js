@@ -1,53 +1,45 @@
-import { youtubedl, youtubedlv2 } from '@bochilteam/scraper' 
 import yts from 'yt-search'
+import { youtubedl, youtubedlv2 } from '@bochilteam/scraper-sosmed'
 
-var handler = async (m, { conn, command, text, usedPrefix }) => {
-  try {
-    if (!text) {
-      return conn.reply(m.chat, `exemple ${usedPrefix}${command} hello`, m);
+let handler = async (m, { conn, command, text, usedPrefix }) => {
+  if (!text) throw ` مثال :\n.song سورة الرحمن بصوت القارئ حمزة بوديب`
+
+  let res = await yts(text)
+  let vid = res.videos[0]
+
+  await conn.sendMessage(m.chat, { react: { text: "✅", key: m.key } })
+
+  if (!vid) throw 'لم يتم العثور عليه، حاول عكس العنوان والمؤلف'
+
+  let { title, videoId, durationH, viewH, publishedTime } = vid
+  const url = 'https://www.youtube.com/watch?v=' + videoId
+
+  let doc = {
+    audio: {
+      url: await (await youtubedl(url).catch(async () => await youtubedlv2(url))).audio['128kbps'].download()
+    },
+    mimetype: 'audio/mp4',
+    fileName: `${title}`,
+    contextInfo: {
+      externalAdReply: {
+        showAdAttribution: true,
+        mediaType: 2,
+        mediaUrl: url,
+        title: title,
+        body: "© FOX MD BOT",
+        sourceUrl: 'https://wa.me/message/KGDUYWPLPTGIN1'
+      }
     }
-
-    conn.reply(m.chat, 'انتظر لحظة، جاري البحث والتحميل...', m);
-
-    let search = await yts(text);
-    let vid = search.videos[0];
-  if (!search) throw 'لم يتم العثور على الفيديو، حاول عنوانًا آخر';
-    let { authorName, title, thumbnail, duration, viewH, publishedTime, url } = vid;
-
-  
-
-    conn.reply(m.chat, caption, m, {
-      contextInfo: {
-        externalAdReply: {
-          showAdAttribution: true,
-          mediaType: 2,
-          mediaUrl: thumbnail,
-          body: wm,
-          thumbnail: await (await conn.getFile(thumbnail)).data,
-          sourceUrl: url,
-        },
-      },
-    });
-
-    const yt = await youtubedl(url).catch(async (_) => await youtubedlv2(url));
-    const link = await yt.audio['128kbps'].download();
-    let doc = {
-      document: {
-        url: link,
-      },
-      mimetype: 'audio/mpeg',
-      fileName: `${title}.mp3`,
-    };
-
-    return conn.sendMessage(m.chat, doc, { quoted: m });
-  } catch (error) {
-    console.error(error);
-    conn.reply(m.chat, 'هنالك خطأ. الرجاء المحاولة مرة أخرى لاحقاً.\nابحث عن الخيار الصحيح...', m);
   }
-};
 
-handler.help = ['play2']
-handler.tags = ['downloader']
-handler.command = /^play2$/i
+  return conn.sendMessage(m.chat, doc, { quoted: m })
+}
+
+handler.help = ['play']
+handler.command = /^play$/i
 
 export default handler
+
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}
