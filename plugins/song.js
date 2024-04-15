@@ -31,7 +31,7 @@ mimetype: 'audio/mp4', fileName: `${title}`, contextInfo: { externalAdReply: { s
 mediaType:  2,
 mediaUrl: url,
 title: title,
-body: "© BOT SOUNDLOADER",
+body: "© FOX MD BOT",
 sourceUrl: 'https://wa.me/message/KGDUYWPLPTGIN1',
 thumbnail: await(await conn.getFile(thumbnail)).data                                                                     
                                                                                                                  }
