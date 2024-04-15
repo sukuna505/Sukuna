@@ -26,8 +26,8 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
         mediaType: 2,
         mediaUrl: url,
         title: title,
-        body: "© FOX MD BOT",
-        sourceUrl: 'https://wa.me/message/KGDUYWPLPTGIN1'
+        body: "FOX MD BOT",
+        sourceUrl: 'https://chat.whatsapp.com/Fd2BBtD5fmUDrBflNp7cca'
       }
     }
   }
