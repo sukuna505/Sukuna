@@ -30,7 +30,7 @@ body:'%cmd %isdiamond %isPremium',
 footer:'\n',
 after: ` *إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول*
 
-*Owner : https://wa.me/message/LRG6KJCHLD3YF1*`,
++33 6 05 90 72 72 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -134,7 +134,7 @@ text: text,
 contextInfo: {
 externalAdReply: {
 title: `FOX MD BOT
-Abde Ssamad`,
+Abde Samad`,
 body: "+33 6 05 90 72 72",
 thumbnailUrl: 'https://telegra.ph/file/25b0a9a15e2d8ceaf907e.jpg',
 sourceUrl: 'https://wa.me/message/KGDUYWPLPTGIN1',
