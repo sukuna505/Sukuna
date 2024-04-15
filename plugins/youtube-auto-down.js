@@ -13,7 +13,7 @@ if (!matches) return false;
 await m.reply(wait);
 
     try {
-                let q = "360p"
+                let q = "1080p"
         let v = matches[0]
         const yt = await youtubedl(v).catch(async () => await youtubedlv2(v))
         const dl_url = await yt.video[q].download()
