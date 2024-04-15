@@ -9,12 +9,14 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (!vid) throw 'لم يتم العثور عليه، حاول عكس العنوان والمؤلف'
  let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
     const url = 'https://www.youtube.com/watch?v=' + videoId
-     let captvid = The YouTube
+     
+let captvid = The YouTube
 The Address : ${title}
 The Duration : ${timestamp}
 The Scenes : ${views}
 since : ${ago}
 Link : ${url}`; `  
+
 conn.sendMessage(m.chat, {
 text: vap,
 contextInfo: {
