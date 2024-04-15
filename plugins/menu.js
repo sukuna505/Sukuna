@@ -30,8 +30,7 @@ body:'%cmd %isdiamond %isPremium',
 footer:'\n',
 after: ` *إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول*
 
-*Bot Owner* 
-*https://wa.me/message/LRG6KJCHLD3YF1*`,
+*Owner : https://wa.me/message/LRG6KJCHLD3YF1*`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -142,6 +141,8 @@ sourceUrl: 'https://wa.me/message/KGDUYWPLPTGIN1',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
+
+conn.sendMessage(m.chat, (audio: { url: 'https://files.catbox.moe/8ejcag.mp3' }, mimetype:'audio/mpeg', ptt:true}, {quoted:m})
 
      /*conn.sendFile(m.chat, 'menu.png', text.trim(), m, null, )
     /*conn.sendButton(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://www.instagram.com/fg98_ff', pp, [
