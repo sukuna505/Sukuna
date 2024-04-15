@@ -10,9 +10,9 @@ import moment from 'moment-timezone';
 global.botnumber = ""
 
 global.owner = [
-  ['33605907272', '# - Sebastian ) 皮!', true],
+  ['33605907272', 'FOX MD BOT', true],
 
-  ['33605907272','# - Sebastian ) 皮!', true],
+  ['33605907272','FOX MD BOT', true],
   ['33605907272'],
   ['33605907272']
 ];
@@ -20,13 +20,13 @@ global.owner = [
 global.suittag = ['33605907272'];
 global.prems = ['33605907272'];
 
-global.packname = 'bob bot';
-global.author = 'sebastian';
-global.wm = 'sebastian';
-global.titulowm = 'sebastian';
-global.titulowm2 = `sebastian`
-global.igfg = 'sebastian';
-global.wait = '*|🏃| loading...*\n*نحاول تلبية طلبكم لا تستعجلوا* ♥\https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X';
+global.packname = 'FOX MD BOT';
+global.author = 'FOX MD BOT';
+global.wm = 'FOX MD BOT';
+global.titulowm = 'FOX MD BOT';
+global.titulowm2 = `FOX MD BOT`
+global.igfg = 'FOX MD BOT';
+global.wait = '*|🏃| loading...*\n*نحاول تلبية طلبكم لا تستعجلوا* ♥\https://chat.whatsapp.com/Fd2BBtD5fmUDrBflNp7cca';
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
 global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
@@ -46,10 +46,10 @@ global.año = d.toLocaleDateString('en', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
 global.wm2 = `${dia} ${fecha}\SEBASTIAN`;
-global.gt = 'SEBASTIAN';
-global.mysticbot = 'The SEBASTIAN';
-global.md = 'https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X';
-global.mysticbot = 'https://chat.whatsapp.com/JpyrXZnaJI6HuCgCHTWS4X';
+global.gt = 'FOX MD BOT';
+global.mysticbot = 'The FOX MD BOT';
+global.md = 'https://chat.whatsapp.com/Fd2BBtD5fmUDrBflNp7cca';
+global.mysticbot = 'https://chat.whatsapp.com/Fd2BBtD5fmUDrBflNp7cca';
 global.waitt = '*[ ⏳ ] LOADING...*';
 global.waittt = '*[ ⏳ ] LOADING...*';
 global.waitttt = '*[ ⏳ ] LOADING...*';
