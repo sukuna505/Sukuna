@@ -30,7 +30,8 @@ body:'%cmd %isdiamond %isPremium',
 footer:'\n',
 after: ` *إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول*
 
-*> Abde Ssamad*`,
+*Bot Owner* 
+*https://wa.me/message/LRG6KJCHLD3YF1*`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -133,8 +134,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: `SoundLoader Bot
-໐นlค๓iຖē`,
+title: `FOX MD BOT
+Abde Ssamad`,
 body: "+33 6 05 90 72 72",
 thumbnailUrl: 'https://telegra.ph/file/25b0a9a15e2d8ceaf907e.jpg',
 sourceUrl: 'https://wa.me/message/KGDUYWPLPTGIN1',
