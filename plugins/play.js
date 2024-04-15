@@ -1,79 +1,53 @@
-import ytdl from 'ytdl-core';
-import fs from 'fs';
-import ffmpeg from 'fluent-ffmpeg';
-import search from 'yt-search';
+import { youtubedl, youtubedlv2 } from '@bochilteam/scraper' 
+import yts from 'yt-search'
 
-const handler = async (m, { conn, text }) => {
-  if (!text) return m.reply('*مثــــــال*:\n\n *.play* فرشي التراب');
+var handler = async (m, { conn, command, text, usedPrefix }) => {
   try {
-    const results = await search(text);
-    const videoId = results.videos[0].videoId;
-    const info = await ytdl.getInfo(videoId);
-    const title = info.videoDetails.title.replace(/[^\w\s]/gi, '');
-    const thumbnailUrl = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
-    const url = info.videoDetails.video_url;
-    const duration = parseInt(info.videoDetails.lengthSeconds);
-    const uploadDate = new Date(info.videoDetails.publishDate).toLocaleDateString();
-    const views = info.videoDetails.viewCount;
-    const minutes = Math.floor(duration / 60);
-    const description = results.videos[0].description;
-    const seconds = duration % 60;
-    const durationText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;       
-    const audio = ytdl(videoId, { quality: 'highestaudio' });
-    const inputFilePath = './tmp/' + title + '.webm';
-    const outputFilePath = './tmp/' + title + '.mp3';
-    const viewsFormatted = formatViews(views);
+    if (!text) {
+      return conn.reply(m.chat, `exemple ${usedPrefix}${command} hello`, m);
+    }
 
-    audio.pipe(fs.createWriteStream(inputFilePath)).on('finish', async () => {
-      ffmpeg(inputFilePath)
-        .toFormat('mp3')
-        .on('end', async () => {
-          const buffer = fs.readFileSync(outputFilePath);                    
-          conn.sendMessage(m.chat, {         
-            audio: buffer,
-            mimetype: 'audio/mpeg',
-            contextInfo: {
-              externalAdReply: {
-                title: title,
-                body: "",
-                thumbnailUrl: thumbnailUrl,
-                sourceUrl: url,
-                mediaType: 1,
-                showAdAttribution: true,
-                renderLargerThumbnail: true
-              }
-            }
-          }, {
-            quoted: m
-          });
-          fs.unlinkSync(inputFilePath);
-          fs.unlinkSync(outputFilePath);
-        })
-        .on('error', (err) => {
-          console.log(err);
-          m.reply(`حدث خطأ أثناء تحويل الصوت: ${err.message}`);
-          fs.unlinkSync(inputFilePath);
-          fs.unlinkSync(outputFilePath);
-        })
-        .save(outputFilePath);
+    conn.reply(m.chat, 'انتظر لحظة، جاري البحث والتحميل...', m);
+
+    let search = await yts(text);
+    let vid = search.videos[0];
+  if (!search) throw 'لم يتم العثور على الفيديو، حاول عنوانًا آخر';
+    let { authorName, title, thumbnail, duration, viewH, publishedTime, url } = vid;
+
+  
+
+    conn.reply(m.chat, caption, m, {
+      contextInfo: {
+        externalAdReply: {
+          showAdAttribution: true,
+          mediaType: 2,
+          mediaUrl: thumbnail,
+          body: wm,
+          thumbnail: await (await conn.getFile(thumbnail)).data,
+          sourceUrl: url,
+        },
+      },
     });
-  } catch (e) {
-    console.log(e);
-    m.reply(`حدث خطأ أثناء البحث عن الأغنية:`);
+
+    const yt = await youtubedl(url).catch(async (_) => await youtubedlv2(url));
+    const link = await yt.audio['128kbps'].download();
+    let doc = {
+      document: {
+        url: link,
+      },
+      mimetype: 'audio/mpeg',
+      fileName: `${title}.mp3`,
+    };
+
+    return conn.sendMessage(m.chat, doc, { quoted: m });
+  } catch (error) {
+    console.error(error);
+    conn.reply(m.chat, 'هنالك خطأ. الرجاء المحاولة مرة أخرى لاحقاً.\nابحث عن الخيار الصحيح...', m);
   }
 };
 
-handler.command = handler.help = ['play'];
-handler.tags = ['downloader'];
+handler.help = ['play2']
+handler.tags = ['downloader']
+handler.command = /^play2$/i
 
-export default handler;
-
-function formatViews(views) {
-  if (views >= 1000000) {
-    return (views / 1000000).toFixed(1) + 'M';
-  } else if (views >= 1000) {
-    return (views / 1000).toFixed(1) + 'K';
-  } else {
-    return views.toString();
-  }
-}
+export default handler
