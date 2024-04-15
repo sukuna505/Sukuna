@@ -30,7 +30,7 @@ body:'%cmd %isdiamond %isPremium',
 footer:'\n',
 after: ` *إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول*
 
-*໐นlค๓iຖē*`,
+*> Abde Ssamad*`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -136,7 +136,7 @@ externalAdReply: {
 title: `SoundLoader Bot
 ໐นlค๓iຖē`,
 body: "+33 6 05 90 72 72",
-thumbnailUrl: 'https://telegra.ph/file/f9e23ca26b5cfe252e172.jpg',
+thumbnailUrl: 'https://telegra.ph/file/25b0a9a15e2d8ceaf907e.jpg',
 sourceUrl: 'https://wa.me/message/KGDUYWPLPTGIN1',
 mediaType: 1,
 renderLargerThumbnail: true
