@@ -137,7 +137,7 @@ title: `FOX MD BOT
 Abde Samad`,
 body: "+33 6 05 90 72 72",
 thumbnailUrl: 'https://telegra.ph/file/25b0a9a15e2d8ceaf907e.jpg',
-sourceUrl: 'https://wa.me/message/KGDUYWPLPTGIN1',
+sourceUrl: 'https://chat.whatsapp.com/Fd2BBtD5fmUDrBflNp7cca',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
