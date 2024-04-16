@@ -26,7 +26,7 @@ global.wm = 'FOX MD BOT';
 global.titulowm = 'FOX MD BOT';
 global.titulowm2 = `FOX MD BOT`
 global.igfg = 'FOX MD BOT';
-global.wait = 'I am trying to fulfill your request, do not rush...';
+global.wait = '*|🏃| loading...*\n*نحاول تلبية طلبكم لا تستعجلوا* ♥\ninstagram.com/noureddine_ouafy';
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
 global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
@@ -45,7 +45,7 @@ global.mes = d.toLocaleDateString('en', {month: 'long'});
 global.año = d.toLocaleDateString('en', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\FOX MD BOT;
+global.wm2 = `${dia} ${fecha}\nFOX MD BOT;
 global.gt = 'FOX MD BOT';
 global.mysticbot = 'The FOX MD BOT';
 global.md = 'https://chat.whatsapp.com/Fd2BBtD5fmUDrBflNp7cca';
