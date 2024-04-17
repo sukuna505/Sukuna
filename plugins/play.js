@@ -2,7 +2,7 @@ import yts from 'yt-search'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper-sosmed'
 
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw ` مثال :\n.song سورة الرحمن بصوت القارئ حمزة بوديب`
+  if (!text) throw `هذا الأمر خاص بتحميل المقاطع الصوتية`
 
   let res = await yts(text)
   let vid = res.videos[0]
@@ -27,7 +27,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
         mediaUrl: url,
         title: title,
         body: "FOX MD BOT",
-        sourceUrl: 'https://chat.whatsapp.com/Fd2BBtD5fmUDrBflNp7cca'
+        sourceUrl: 'https://chat.whatsapp.com/Fd2BBtD5fmUDrBflNp7cca '
       }
     }
   }
