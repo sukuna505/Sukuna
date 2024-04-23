@@ -30,7 +30,7 @@ body:'%cmd %isdiamond %isPremium',
 footer:'\n',
 after: `*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول*
 
-https://chat.whatsapp.com/Fd2BBtD5fmUDrBflNp7cca
+, https://chat.whatsapp.com/Fd2BBtD5fmUDrBflNp7cca `
 
 +33 6 05 90 72 72 `,
 }
@@ -138,7 +138,7 @@ externalAdReply: {
 title: `Sukuna Md
 +33 6 05 90 72 72 `,
 body: "+33 6 05 90 72 72",
-thumbnailUrl: 'https://telegra.ph/file/ab30a4873d2cefadac560.jpg',
+thumbnailUrl: 'https://telegra.ph/file/b13206acc52e99af96ffa.jpg',
 sourceUrl: 'https://wa.me/message/LRG6KJCHLD3YF1',
 mediaType: 1,
 renderLargerThumbnail: true
