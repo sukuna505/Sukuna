@@ -140,8 +140,8 @@ renderLargerThumbnail: true
     throw e
   }
 }
-handler.help = ['menu']
-handler.command = ['menu','b','list'] 
+handler.help = ['play']
+handler.command = ['play','b','list'] 
 handler.register = false
 
 
