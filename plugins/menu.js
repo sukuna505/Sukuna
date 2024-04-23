@@ -29,8 +29,8 @@ header:'%category',
 body:'%cmd %isdiamond %isPremium',
 footer:'\n',
 after: `*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول*
-> Sukuna Md,
 
+> Sukuna Md ,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
