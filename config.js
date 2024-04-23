@@ -10,9 +10,9 @@ import moment from 'moment-timezone';
 global.botnumber = ""
 
 global.owner = [
-  ['+33605907272', 'fox md', true],
+  ['+33605907272', 'sukuna md', true],
 
-  ['+33605907272','fox md', true],
+  ['+33605907272','sukuna md', true],
   ['+33605907272'],
   ['+33605907272']
 ];
@@ -20,12 +20,12 @@ global.owner = [
 global.suittag = ['+33605907272'];
 global.prems = ['+33605907272'];
 
-global.packname = 'fox md bot';
-global.author = 'fox md';
-global.wm = 'fox md';
-global.titulowm = 'fox md';
-global.titulowm2 = `fox md`
-global.igfg = 'fox md';
+global.packname = 'sukuna md bot';
+global.author = 'sukuna md';
+global.wm = 'sukuna md';
+global.titulowm = 'sukuna md';
+global.titulowm2 = `sukuna md`
+global.igfg = 'sukuna md';
 global.wait = 'loading...';
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
@@ -45,11 +45,11 @@ global.mes = d.toLocaleDateString('en', {month: 'long'});
 global.año = d.toLocaleDateString('en', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\nFOX MD`;
-global.gt = 'FOX MD';
-global.mysticbot = 'The FOX';
-global.md = 'https://instagram.com/oulamine.acc1';
-global.mysticbot = 'https://instagram.com/oulamine.acc2';
+global.wm2 = `${dia} ${fecha}\nSUKUNA MD`;
+global.gt = 'SUKUNA MD';
+global.mysticbot = 'The SUKUNA';
+global.md = 'https://instagram.com/kim.du.ji';
+global.mysticbot = 'https://instagram.com/kim.du.ji';
 global.waitt = '*[ ⏳ ] LOADING...*';
 global.waittt = '*[ ⏳ ] LOADING...*';
 global.waitttt = '*[ ⏳ ] LOADING...*';
