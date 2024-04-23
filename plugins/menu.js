@@ -122,7 +122,7 @@ externalAdReply: {
 title: `FOX MD BOT
 +33 6 05 90 72 72 `,
 body: "+33 6 05 90 72 72",
-thumbnailUrl: 'https://telegra.ph/file/25b0a9a15e2d8ceaf907e.jpg',
+thumbnailUrl: 'https://telegra.ph/file/ab30a4873d2cefadac560.jpg',
 sourceUrl: 'https://chat.whatsapp.com/Fd2BBtD5fmUDrBflNp7cca',
 mediaType: 1,
 renderLargerThumbnail: true
