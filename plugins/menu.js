@@ -10,8 +10,7 @@ const defaultMenu = {
   before: `*👋🏻 Hey* %name
 *├ Total user :* %totalreg
 *└ Uptime :* %muptime
-%readmore
-  `.trimStart(),
+`.trimStart(),
 header:'%category',
 body:'%cmd %isdiamond %isPremium',
 footer:'\n',
