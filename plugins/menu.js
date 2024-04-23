@@ -28,7 +28,8 @@ const defaultMenu = {
 header:'%category',
 body:'%cmd %isdiamond %isPremium',
 footer:'\n',
-after: `*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول* ,
+after: `*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول*,
+
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
