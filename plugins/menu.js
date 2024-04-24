@@ -10,8 +10,8 @@ let tags = {
 const defaultMenu = {
   before: `
 > *Hey %name* 
-> *Total user : %totalreg*
-> *Uptime : %muptime*
+> *Total user:%totalreg*
+> *Uptime:%muptime*
 > *Creator Kim Du Ji*
 %readmore
 
