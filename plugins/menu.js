@@ -227,9 +227,9 @@ renderLargerThumbnail: true
     throw e
   }
 }
-handler.help = ['help']
-handler.tags = ['main']
-handler.command = ['start','start'] 
+handler.help = ['start']
+handler.command = ['start','b','list'] 
+handler.register = false
 
 export default handler
 
