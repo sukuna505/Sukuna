@@ -1,3 +1,4 @@
+//import db from '../lib/database.js'
 import { promises } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
@@ -7,10 +8,14 @@ let tags = {
 
 }
 const defaultMenu = {
-  before: `*👋🏻 Hey* %name
+  before: `
+*👋🏻 Hey* *%name* 
 *├ Total user :* %totalreg
-*└ Uptime :* %muptime
+*├ Uptime :* %muptime
+*└  Creator* Kim Du Ji
+
 %readmore
+
 > *مرحبًا! أنا بوت تحميل المقاطع الصوتية في واتساب بميزة "play."*
 
 *مهمتي هي تسهيل عملية تحميل المقاطع الصوتية مثل الموسيقى والتلاوات القرآنية لك بسرعة وسهولة. كل ما عليك فعله هو إرسال الرابط الخاص بالمقطع الصوتي وإضافة "play." في البداية ، وسأتولى باقي العمل!*
@@ -32,14 +37,151 @@ after: `*إستخدامك للبوت بشكل صحيح يعني أنك تزيد 
 
 > Sukuna Md`,
 }
-let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
+let handler = async (m, { conn, usedPrefx: _p, __dirname }) => {
+let nao = await conn.sendMessage(m.chat, {text: '___________________■□■□'})
+
+ await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '________________■□■□___'
+       }
+      }
+    }, {})
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '_____________■□■□______'
+       }
+      }
+    }, {})
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '__________■□■□_________'
+       }
+      }
+    }, {})
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '_______■□■□____________'
+       }
+      }
+    }, {})
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '____■□■□_______________'
+       }
+      }
+    }, {})
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '_■□■□__________________'
+       }
+      }
+    }, {})
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '■□_____________________'
+       }
+      }
+    }, {})
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '________________________'
+       }
+      }
+    }, {})
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Sukuna 」'
+       }
+      }
+    }, {})
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Sukuna 」'
+       }
+      }
+    }, {})
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Sukuna」'
+       }
+      }
+    }, {})
+ await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Sukuna」'
+       }
+      }
+    }, {})   
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Sukuna 」'
+       }
+      }
+    }, {})   
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Sukuna」'
+       }
+      }
+    }, {})   
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Loading menu 」'
+       }
+      }
+    }, {})   
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
     let { exp, diamond, level, role } = global.db.data.users[m.sender]
     let { min, xp, max } = xpRange(level, global.multiplier)
     let name = await conn.getName(m.sender)
     let d = new Date(new Date + 3600000)
-    let locale = 'ar'
+    let locale = 'id'
     // d.getTimeZoneOffset()
     // Offset -420 is 18.00
     // Offset    0 is  0.00
@@ -61,14 +203,14 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       minute: 'numeric',
       second: 'numeric'
     })
-    let _uptime = process.uptime() * 1000
+    let _uptime = process.uptime() * 5000
     let _muptime
     if (process.send) {
       process.send('uptime')
       _muptime = await new Promise(resolve => {
         process.once('message', resolve)
-        setTimeout(resolve, 1000)
-      }) * 1000
+        setTimeout(resolve, 5000)
+      }) * 5000
     }
     let muptime = clockString(_muptime)
     let uptime = clockString(_uptime)
@@ -133,31 +275,28 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: `Sukuna Md
-kim Du Ji `,
-body: "+33 6 05 90 72 72",
+title: 'Sukuna Md',
+body: "Kim Du Ji",
 thumbnailUrl: 'https://telegra.ph/file/ab30a4873d2cefadac560.jpg',
 sourceUrl: 'https://wa.me/message/LRG6KJCHLD3YF1',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
 
-    /*conn.sendFile(m.chat, 'menu.png', text.trim(), m, null, )
-    /*conn.sendButton(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://www.instagram.com/kim.du.ji', pp, [
-      ['ꨄ︎ Apoyar', `${_p}donate`],
-      ['⏍ Info', `${_p}botinfo`],
-      ['⌬ Grupos', `${_p}gpdylux`]
-    ],m, rpl)*/
+     let vn = "./vn/miku.mp3"
 
+  conn.sendFile(m.chat, vn, "ehee.mp3", null, m, true, {
+    type: "audioMessage",
+    ptt: true,
+  });
   } catch (e) {
-    conn.reply(m.chat, '❎ هناك خطأ في لائحة الاوامر', m)
+    conn.reply(m.chat, '❎ ᴍᴀᴀғ, ᴍᴇɴᴜ ᴍᴇɴɢᴀʟᴀᴍɪ ᴋᴇsᴀʟᴀʜᴀɴ', m)
     throw e
   }
 }
-handler.help = ['start']
-handler.command = ['start','b','list'] 
-handler.register = false
-
+handler.help = ['help']
+handler.tags = ['main']
+handler.command = ['start','start'] 
 
 export default handler
 
@@ -170,5 +309,4 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [d, 'd ', h, 'h ', m, 'm '].map(v => v.toString().padStart(2, 0)).join('')
-      }
-    
+                            }
