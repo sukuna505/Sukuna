@@ -216,6 +216,7 @@ mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
 
+conn.sendMessage(m.chat, (audio: { url: 'https://a.uguu.se/ujgpgcQD.mp3'), mimetype:'audio/mpeg', ptt:true}, {quoted:m))
      let vn = "https://a.uguu.se/ujgpgcQD.mp3"
 
   conn.sendFile(m.chat, vn, "ehee.mp3", null, m, true, {
