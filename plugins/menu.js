@@ -16,16 +16,6 @@ const defaultMenu = {
 %readmore
 
 *أهلاً، أنا البوت الخاص بك الذي يمكنه تحميل المقاطع الصوتية من اليوتيوب ببساطة باستخدام الأمر ".play". بالإضافة إلى ذلك، أستطيع أيضًا تحميل ريلزات الإنستغرام تلقائيًا لك، فقط كل ما عليك فعله هو نسخ رابط الريلز وسأقوم بالمهمة!*
-
-*باستخدام ميزة "play." ، ستحصل على الملف الصوتي مباشرة في محادثتك دون عناء التحميل اليدوي. سواء كنت ترغب في الاستماع إلى الموسيقى المفضلة لديك أو الاستماع إلى تلاوات قرآنية ملهمة، فأنا هنا لتوفير هذه التجربة بكل يسر وسهولة.*
-
-*جرب ميزة .play الآن واستمتع بتبادل المقاطع الصوتية بكل سهولة وراحة في واتساب!*
-
-> *توضيح!*
- 
-*للتحميل الصحيح باستخدام ميزة  تحميل المقاطع الصوتية ، يجب أن تقوم بإضافة النقطة قبل كلمة "play" في بداية الإسم الأغنية او اسم السورة  او الرابط.*
-
-*هذه النقطة تعمل كمؤشر للبوت لتحديد بداية الرابط او الإسم ... وتشغيل عملية التحميل بشكل صحيح.*
   `.trimStart(),
 header:'%category',
 body:'%cmd %isdiamond %isPremium',
@@ -35,14 +25,14 @@ after: `*إستخدامك للبوت بشكل صحيح يعني أنك تزيد 
 > Sukuna Md`,
 }
 let handler = async (m, { conn, usedPrefx: _p, __dirname }) => {
-let nao = await conn.sendMessage(m.chat, {text: '___________________■□■□'})
+let nao = await conn.sendMessage(m.chat, {text: '___________________'})
 
  await conn.relayMessage(m.chat, {
       protocolMessage: {
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '________________■□■□___'
+        conversation: '___________________'
        }
       }
     }, {})
@@ -51,7 +41,7 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________■□■□
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '_____________■□■□______'
+        conversation: '___________________'
        }
       }
     }, {})
@@ -60,7 +50,7 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________■□■□
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '__________■□■□_________'
+        conversation: '___________________'
        }
       }
     }, {})
@@ -69,7 +59,7 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________■□■□
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '_______■□■□____________'
+        conversation: '___________________'
        }
       }
     }, {})
@@ -78,7 +68,7 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________■□■□
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '____■□■□_______________'
+        conversation: '___________________'
        }
       }
     }, {})
@@ -87,7 +77,7 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________■□■□
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '_■□■□__________________'
+        conversation: '___________________'
        }
       }
     }, {})
@@ -306,4 +296,4 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [d, 'd ', h, 'h ', m, 'm '].map(v => v.toString().padStart(2, 0)).join('')
-          }
+      }
