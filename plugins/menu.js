@@ -25,14 +25,14 @@ after: `*إستخدامك للبوت بشكل صحيح يعني أنك تزيد 
 > Sukuna Md`,
 }
 let handler = async (m, { conn, usedPrefx: _p, __dirname }) => {
-let nao = await conn.sendMessage(m.chat, {text: '___________________'})
+let nao = await conn.sendMessage(m.chat, {text: 'Loading'})
 
  await conn.relayMessage(m.chat, {
       protocolMessage: {
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '___________________'
+        conversation: 'Loading'
        }
       }
     }, {})
@@ -41,7 +41,7 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________'})
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '___________________'
+        conversation: 'Loading'
        }
       }
     }, {})
@@ -50,7 +50,7 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________'})
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '___________________'
+        conversation: 'Loading'
        }
       }
     }, {})
@@ -59,7 +59,7 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________'})
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '___________________'
+        conversation: 'Loading'
        }
       }
     }, {})
@@ -68,7 +68,7 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________'})
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '___________________'
+        conversation: 'Loading'
        }
       }
     }, {})
@@ -77,7 +77,7 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________'})
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '___________________'
+        conversation: 'Loading'
        }
       }
     }, {})
@@ -86,7 +86,7 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________'})
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '■□_____________________'
+        conversation: 'Loading'
        }
       }
     }, {})
@@ -95,7 +95,16 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________'})
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '________________________'
+        conversation: 'Loading'
+       }
+      }
+    }, {})
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Sukuna 」'
        }
       }
     }, {})
@@ -114,15 +123,6 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________'})
         type: 14,
         editedMessage: {
         conversation: '「 Sukuna 」'
-       }
-      }
-    }, {})
-    await conn.relayMessage(m.chat, {
-      protocolMessage: {
-        key: nao.key,
-        type: 14,
-        editedMessage: {
-        conversation: '「 Sukuna」'
        }
       }
     }, {})
@@ -131,7 +131,7 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________'})
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '「 Sukuna」'
+        conversation: '「 Sukuna 」'
        }
       }
     }, {})   
