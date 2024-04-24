@@ -335,7 +335,7 @@ renderLargerThumbnail: true
     ptt: true,
   });
   } catch (e) {
-    conn.reply(m.chat, '❎ ᴍᴀᴀғ, ᴍᴇɴᴜ ᴍᴇɴɢᴀʟᴀᴍɪ ᴋᴇsᴀʟᴀʜᴀɴ', m)
+    conn.reply(m.chat, '> ❎ Maaf , Start Mengalami kesalahan', m)
     throw e
   }
 }
