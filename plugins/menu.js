@@ -9,10 +9,10 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-> *Hey %name* 
-> *Total user:%totalreg*
-> *Uptime:%muptime*
-> *Creator Kim Du Ji*
+> Hey %name
+> Total user : %totalreg
+> Uptime : %muptime
+> Creator Kim Du Ji
 %readmore
 
 *أهلاً، أنا البوت الخاص بك الذي يمكنه تحميل المقاطع الصوتية من اليوتيوب ببساطة باستخدام الأمر "play."*
@@ -216,7 +216,7 @@ await conn.relayMessage(m.chat, {
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '「 Loading start 」'
+        conversation: '「 `Loading start` 」'
        }
       }
     }, {})   
