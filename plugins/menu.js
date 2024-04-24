@@ -24,7 +24,7 @@ after: `*إستخدامك للبوت بشكل صحيح يعني أنك تزيد 
 
 > Sukuna Md`,
 }
-conn.sendMessage(m.chat, (audio: { url: 'https://files.catbox.moe/p9imqj.m4a'), mimetype:'audio/mpeg', ptt:true}, {quoted:m))
+conn.sendMessage(m.chat, (audio: { url: 'https://a.uguu.se/ujgpgcQD.mp3'), mimetype:'audio/mpeg', ptt:true}, {quoted:m))
 
 let handler = async (m, { conn, usedPrefx: _p, __dirname }) => {
 let nao = await conn.sendMessage(m.chat, {text: '「 Loading 」.'})
