@@ -168,7 +168,7 @@ let nao = await conn.sendMessage(m.chat, {text: '___________________■□■□
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '「 Loading menu 」'
+        conversation: '「 Loading start 」'
        }
       }
     }, {})   
