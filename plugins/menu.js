@@ -9,13 +9,17 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-> *👋🏻 Hey* *%name* 
-> *├ Total user :* %totalreg
-> *├ Uptime :* %muptime
-> *└  Creator* Kim Du Ji
+> *Hey %name* 
+> *Total user : %totalreg*
+> *Uptime : %muptime*
+> *Creator Kim Du Ji*
 %readmore
 
-*أهلاً، أنا البوت الخاص بك الذي يمكنه تحميل المقاطع الصوتية من اليوتيوب ببساطة باستخدام الأمر ".play". بالإضافة إلى ذلك، أستطيع أيضًا تحميل ريلزات الإنستغرام تلقائيًا لك، فقط كل ما عليك فعله هو نسخ رابط الريلز وسأقوم بالمهمة!*
+*أهلاً، أنا البوت الخاص بك الذي يمكنه تحميل المقاطع الصوتية من اليوتيوب ببساطة باستخدام الأمر "play."*
+
+*بالإضافة إلى ذلك، أستطيع أيضًا تحميل ريلزات الإنستغرام تلقائيًا لك، فقط كل ما عليك فعله هو نسخ رابط الريلز وسأقوم بالمهمة!*
+  
+*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول*
   `.trimStart(),
 header:'%category',
 body:'%cmd %isdiamond %isPremium',
@@ -32,11 +36,119 @@ let nao = await conn.sendMessage(m.chat, {text: '「 Loading 」.'})
         key: nao.key,
         type: 14,
         editedMessage: {
-        conversation: '「 Loading 」..'
+        conversation: '「 Loading 」.'
        }
       }
     }, {})
     await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Loading 」.'
+       }
+      }
+    }, {})
+await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Loading 」.'
+       }
+      }
+    }, {})
+await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Loading 」.'
+       }
+      }
+    }, {})
+await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Loading 」..'
+       }
+      }
+    }, {})
+await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Loading 」..'
+       }
+      }
+    }, {})
+await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Loading 」..'
+       }
+      }
+    }, {})
+await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Loading 」..'
+       }
+      }
+    }, {})
+await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Loading 」..'
+       }
+      }
+    }, {})
+await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Loading 」...'
+       }
+      }
+    }, {})
+await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Loading 」...'
+       }
+      }
+    }, {})
+await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Loading 」...'
+       }
+      }
+    }, {})
+await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: nao.key,
+        type: 14,
+        editedMessage: {
+        conversation: '「 Loading 」...'
+       }
+      }
+    }, {})
+await conn.relayMessage(m.chat, {
       protocolMessage: {
         key: nao.key,
         type: 14,
@@ -242,4 +354,4 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [d, 'd ', h, 'h ', m, 'm '].map(v => v.toString().padStart(2, 0)).join('')
-      }
+        }
